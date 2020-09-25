@@ -16,8 +16,8 @@ class Layout extends Component {
                 : <main className="content-container">
                     <DetailsContainer data={this.props.data} />
                     <Switch>
-                        <Route exact path="/overview" render={(props) => <Overview data={this.props.data} />} />
-                        <Route path="/sales" render={(props) => <DataContainer sales={this.props.data.sales} />} />
+                        <Route exact path="stackline/" render={(props) => <Overview data={this.props.data} />} />
+                        <Route path="stackline/sales" render={(props) => <DataContainer sales={this.props.data.sales} />} />
                     </Switch>
                 </main>
                 }
