@@ -8,12 +8,12 @@ const nav = (props) => {
     return (
         <div className="nav">
             <div className="nav-item">
-                <NavLink exact to="/" activeClassName="active">
+                <NavLink exact to="/stackline/" activeClassName="active">
                     <FontAwesomeIcon className="icon-style" icon={faHome} />Overview
                 </NavLink>
             </div>
             <div className="nav-item">
-                <NavLink to="/sales" activeClassName="active"><FontAwesomeIcon className="icon-style" icon={faChartBar} />Sales</NavLink>
+                <NavLink to="/stackline/sales" activeClassName="active"><FontAwesomeIcon className="icon-style" icon={faChartBar} />Sales</NavLink>
             </div>
         </div>
     );
