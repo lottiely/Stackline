@@ -1,0 +1,106 @@
+@import 'detailsContainer';
+@import 'header';
+@import 'layout';
+@import 'dataContainer';
+@import 'overview';
+
+$primary: #46A8F6;
+
+$primary-font: #212D39;
+$subtitle: #9BA6BF;
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F6F8FA;
+}
+
+h1, h2, p {
+    color: $primary-font;
+}
+
+p, a { 
+    font-size: 16px;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.subtitle {
+    color: $subtitle;
+}
+
+.card-style{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags {
+    ul{
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            text-decoration: none;
+            color: $primary-font;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px 20px;
+            margin: 5px;
+            transition: all .2s ease-in-out;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            background-color: #ccc;
+        }
+    }
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+    .nav-item {
+        font-size: 20px;
+        color: $subtitle;
+        margin-bottom: 30px;
+
+        .active {
+            color: $primary-font;
+            .icon-style {
+                color: $primary;
+            }
+        }
+
+        .icon-style{
+            margin-right: 10px;
+        }
+
+        a{
+            color: $subtitle;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}
